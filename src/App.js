@@ -4,6 +4,9 @@ import "./App.css";
 function App() {
   return (
     <div>
+      <header class="page-header App-header">
+        <h1>Header Semantic Tag</h1>
+      </header>
       <h2>This is HTML Forms</h2>
       <form action="backend.js">
         <div>
@@ -56,7 +59,7 @@ function App() {
       <a href="#">Anchor</a>
       <input type="text" />
       Input
-      <img src="../public/logo192.png" alt="Image" />
+      <img src={logo} alt="Image" style={{ height: "50px" }} />
       {/* Block Element */}
       <h2>Block Element</h2>
       <h3>Heading</h3>
@@ -67,7 +70,12 @@ function App() {
       <p>I want to write &lt;p&gt;</p>
       <p>Pound is written like &pound;</p>
       <p>Copyright is written like &copy;</p>
-      <p>Empty Character is written like &#8203;</p>
+      <p id="pid">Empty Character is written like &#8203;</p>
+      <p>
+        Lorem ipsum <strong>dolor</strong> sit amet consectetur{" "}
+        <em>adipisicing</em> elit. Recusandae, <sub>delectus</sub>{" "}
+        <sup>natus </sup> eligendi assumenda <mark>possimus</mark> dolorum?
+      </p>
     </div>
   );
 }
