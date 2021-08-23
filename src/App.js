@@ -66,16 +66,77 @@ function App() {
       <p>Paragragh</p>
       <div>Division</div>
       {/* HTML Entities */}
-      <p>My name is Jetal. &nbsp; I am a programmer.</p>
-      <p>I want to write &lt;p&gt;</p>
-      <p>Pound is written like &pound;</p>
+      <p
+        style={{
+          fontFamily: "Oswald, sans-serif",
+          fontSize: "30px",
+          lineHeight: "1.3 em",
+          fontWeight: "bold",
+        }}
+      >
+        {" "}
+        {/*px- 1/96th of an inch */}
+        My name is Jetal. &nbsp; I am a programmer.
+      </p>
+      <p id="p1id">I want to write &lt;p&gt;</p>
+      <p id="p2id">Pound is written like &pound;</p>
       <p>Copyright is written like &copy;</p>
-      <p id="pid">Empty Character is written like &#8203;</p>
+      <p id="p3id">Empty Character is written like &#8203;</p>
       <p>
         Lorem ipsum <strong>dolor</strong> sit amet consectetur{" "}
         <em>adipisicing</em> elit. Recusandae, <sub>delectus</sub>{" "}
         <sup>natus </sup> eligendi assumenda <mark>possimus</mark> dolorum?
       </p>
+      <div className="container">
+        <h3>This is a Box Model Illustration</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi,
+          volup emo tenetur rem adipisci maxime possimus sunt officiis eaque
+          eveniet nihil optio est numquam? Voluptatem, quaerat?
+        </p>
+      </div>
+      <div className="container">
+        <div id="fruit" className="item">
+          <h3>Fruits</h3>
+          <p id="fruitpara" className="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quis
+            quibusdam reprehenderit sed rem dolor vitae dignissimos ab, veniam
+            nisi aspernatur, nihil magni. Ad incidunt minus omnis suscipit neque
+            consequuntur.
+          </p>
+        </div>
+        <div id="vegetable" className="item">
+          <h3>Vegetables</h3>
+          <p id="vegepara" className="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quis
+            quibusdam reprehenderit sed rem dolor vitae dignissimos ab, veniam
+            nisi aspernatur, nihil magni. Ad incidunt minus omnis suscipit neque
+            consequuntur.
+          </p>
+        </div>
+        <div id="herb" className="item">
+          <h3>Herbs</h3>
+          <p id="herbpara" className="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quis
+            quibusdam reprehenderit sed rem dolor vitae dignissimos ab, veniam
+            nisi aspernatur, nihil magni. Ad incidunt minus omnis suscipit neque
+            consequuntur.
+          </p>
+        </div>
+      </div>
+      <div className="container" id="cont1">
+        <h3>Button Link Styles Explore</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+          ipsam nulla eaque delectus magni enim dolorum qui sit consectetur,
+          doloremque corporis voluptas, sint natus illo commodi recusandae
+          officiis pariatur a?
+        </p>
+        <a href="https://www.google.com" className="btn">
+          Read More...
+        </a>
+        <button className="btn">Contact Us</button>
+      </div>
     </div>
   );
 }

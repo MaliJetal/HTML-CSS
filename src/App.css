@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -41,4 +44,120 @@
 
 #pid {
   color: red;
+}
+
+#p1id {
+  background-color: #0000;
+  color: #fff;
+  height: 30 px;
+  width: 150px;
+  border: 3px solid green;
+  border-radius: 10px;
+}
+
+#p2id {
+  background-color: black;
+  color: rgb(58, 99, 133);
+  height: 50 px;
+  width: 180px;
+  border-bottom: 2px solid #61dafb;
+  border-left: 2px solid #8748;
+  border-right: 2px solid green;
+  border-top: 2px solid hotpink;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 8px;
+}
+
+#p3id {
+  height: 500px;
+  width: 455px;
+  background-image: url("./logo.svg");
+  border: 2px solid red;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-position: center/top/bottom center/left/right; */
+  /* background-position: 192px 34px; */
+}
+
+.container {
+  background-color: rgb(74, 73, 77);
+  color: white;
+  border: 4px solid rgb(206, 219, 230);
+  padding: 19px;
+  width: auto;
+  height: 500px;
+  /* padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding: 12px 26px 4px 10px; */
+  margin: 10px auto;
+  border-radius: 12px;
+  box-sizing: border-box; /*To fix the width of box even the changing size of padding/margin */
+}
+
+.item {
+  border: 4px solid black;
+  margin: 12px 3px;
+  padding: 12px 3px;
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
+.para {
+  padding: 10px;
+  margin: 10px;
+}
+
+#fruit {
+  float: left;
+  width: 48%;
+}
+
+#vegetable {
+  float: left;
+  width: 48%;
+}
+
+#herb {
+  /* float: left; */
+  clear: left;
+  width: 80%;
+}
+
+#cont1 {
+  border: 2px solid red;
+  background-color: lightgrey;
+  padding: 34px;
+  margin: 34px auto;
+  width: 666px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(5, 0, 0);
+  background-color: rgb(221, 166, 38);
+}
+
+a:visited {
+  color: yellow;
+}
+
+a:active {
+  background-color: darkblue;
+}
+
+.btn {
+  background-color: crimson;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 4px;
 }
