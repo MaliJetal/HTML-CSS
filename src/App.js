@@ -212,6 +212,12 @@ function App() {
           4
         </box>
       </div>
+      <div className="container">
+        <div class="indexBox" id="box-1"></div>
+        <div class="indexBox" id="box-2"></div>
+        <div class="indexBox" id="box-3"></div>
+        <div class="indexBox" id="box-4"></div>
+      </div>
     </div>
   );
 }
