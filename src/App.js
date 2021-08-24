@@ -4,7 +4,33 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <header class="page-header App-header">
+      <header>
+        <nav className="navbar">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <div className="search">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search this website"
+              />
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <header className="page-header App-header">
         <h1>Header Semantic Tag</h1>
       </header>
       <h2>This is HTML Forms</h2>
@@ -136,6 +162,55 @@ function App() {
           Read More...
         </a>
         <button className="btn">Contact Us</button>
+      </div>
+      <div className="container">
+        <div className="box">
+          <h4 className="heading">Heading</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+            harum ipsam aliquid deleniti, vitae labore cum laudantium a
+            blanditiis est voluptates dolorum consequuntur. Aliquam corporis,
+            fuga consectetur rerum molestias consequatur tempora natus sed
+            laborum recusandae fugit harum soluta inventore enim. Aspernatur
+            aperiam cum reprehenderit!
+          </p>
+        </div>
+        <div className="box">
+          <h4 className="heading">Heading</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+            harum ipsam aliquid deleniti, vitae labore cum laudantium a
+            blanditiis est voluptates dolorum consequuntur. Aliquam corporis,
+            fuga consectetur rerum molestias consequatur tempora natus sed
+            laborum recusandae fugit harum soluta inventore enim. Aspernatur
+            aperiam cum reprehenderit!
+          </p>
+        </div>
+        <div className="box">
+          <h4 className="heading">Heading</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+            harum ipsam aliquid deleniti, vitae labore cum laudantium a
+            blanditiis est voluptates dolorum consequuntur. Aliquam corporis,
+            fuga consectetur rerum molestias consequatur tempora natus sed
+            laborum recusandae fugit harum soluta inventore enim. Aspernatur
+            aperiam cum reprehenderit!
+          </p>
+        </div>
+      </div>
+      <div className="position-container">
+        <box className="positionBox" id="box1">
+          1
+        </box>
+        <box className="positionBox" id="box2">
+          2
+        </box>
+        <box className="positionBox" id="box3">
+          3
+        </box>
+        <box className="positionBox" id="box4">
+          4
+        </box>
       </div>
     </div>
   );
