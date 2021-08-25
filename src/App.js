@@ -212,11 +212,48 @@ function App() {
           4
         </box>
       </div>
-      <div className="container">
+      <div>
         <div class="indexBox" id="box-1"></div>
         <div class="indexBox" id="box-2"></div>
         <div class="indexBox" id="box-3"></div>
         <div class="indexBox" id="box-4"></div>
+      </div>
+      <div className="flexContainer">
+        <div className="item" id="item-1">
+          First Box
+        </div>
+        <div className="item" id="item-2">
+          Second Box
+        </div>
+        <div className="item" id="item-3">
+          Third Box
+        </div>
+      </div>
+      <div className="unitsContainer">
+        <h1 className="unitsHeading" id="unitsH1">
+          This is Heading 1
+        </h1>
+        <h1 className="unitsHeading" id="unitsH2">
+          This is Heading 2
+        </h1>
+        <h1 className="unitsHeading" id="unitsH3">
+          This is Heading 3
+        </h1>
+      </div>
+      <div class="mediaBox" id="boxm1">
+        {" "}
+        Windows
+      </div>
+      <div class="mediaBox" id="boxm2">
+        {" "}
+        MacOS
+      </div>
+      <div class="mediaBox" id="boxm3">
+        {" "}
+        Kali Linux
+      </div>
+      <div class="mediaBox" id="boxm4">
+        Android
       </div>
     </div>
   );

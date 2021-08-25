@@ -15,8 +15,15 @@ In this tutorial, we will be learning basic to next level features and propertie
   - p : {color : blue;}
     <br>selector : {property: value;}
 - CSS Selectors:
+
   - CSS Selectors are used to find the element whose property will be set
+
   1.  CSS Element Selector
   2.  CSS Id Selector
   3.  CSS Class Selector
   4.  CSS grouping Selector
+
+- FlexBox
+- Flexbox is a one-dimensional layout method for laying out items in rows or columns.
+- It is better way to align items into a container
+  <img src="./src/resources/flex-items.png" />

@@ -248,7 +248,7 @@ h3 {
 .position-container {
   background-color: yellow;
   border: 2px solid red;
-  height: 500px;
+  height: 300px;
 }
 
 .positionBox {
@@ -280,7 +280,7 @@ h3 {
 #box-1 {
   position: relative;
   top: 49px;
-  z-index: -35;
+  z-index: 35;
   background-color: green;
 }
 #box-2 {
@@ -289,9 +289,9 @@ h3 {
   /* z-index  will work only for position: relative, absolute, fixed or sticky; */
   z-index: -165;
   /* will hide the element and the space */
-  /* display: none;  */
+  /* display: none; */
   /* will hide the element but will show its empty space */
-  /* visibility:hidden;  */
+  /* visibility: hidden; */
   background-color: red;
 }
 #box-3 {
@@ -299,4 +299,132 @@ h3 {
 }
 #box-4 {
   background-color: yellow;
+}
+
+.flexContainer {
+  height: 544px;
+  width: 100%;
+  border: 2px solid black;
+  display: flex; /* Initialize the container as a flex box */
+
+  /* Flex properties for a flex container */
+
+  /* flex-direction: row; (Default value of flex-direction is row) */
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column-reverse; */
+
+  flex-wrap: wrap; /*(Default value of flex-direction is no-wrap) */
+  /* flex-wrap: wrap-reverse; */
+
+  /* This is a shorthand for flex-direction: and flex-wrap: ;; */
+  /* flex-flow: row-reverse wrap; */
+
+  /* justify-content will justify the content in horizontal direction */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  /* justify-content: space-around; */
+
+  /* justify-content will justify the content in vertical direction */
+  /* align-items: center; */
+  /* align-items: flex-end; */
+  /* align-items: flex-start; */
+  align-items: stretch;
+}
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  border: 2px solid green;
+  margin: 10px;
+  padding: 3px;
+}
+
+#item-1 {
+  /* Flex properties for a flex item */
+  /* Higher the order, later it shows up in the container */
+  /* order: 2; */
+
+  /* flex-grow: 2;
+  flex-shrink: 2; */
+}
+#item-2 {
+  /* flex-grow: 3;
+  flex-shrink: 3; */
+  /* flex-basis: 160px; */
+  /* when flex-direction is set to row flex-basis: will control width */
+  /* when flex-direction is set to column flex-basis: will control height */
+}
+#item-3 {
+  /* flex: 2 2 230px; */
+  /* align-self: flex-start;
+  align-self: flex-end; */
+  align-self: center;
+}
+
+html {
+  font-size: 10px;
+}
+
+.unitsContainer {
+  padding: 10px 30px;
+  margin: 4px;
+  border: 4px solid red;
+  width: 100%;
+}
+
+.unitsHeading {
+  text-align: center;
+}
+
+#unitsH2 {
+  font-size: 2em;
+  padding: 2em;
+}
+
+#unitsH3 {
+  padding: 3rem;
+}
+
+/* @media screen and (max-width: 800px) {
+  #contents {
+    width: 90%;
+  }
+} */
+
+.mediaBox {
+  background-color: red;
+  color: white;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+@media only screen and (min-width: 400px) {
+  #boxm1 {
+    display: block;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+  #boxm2 {
+    display: block;
+    background-color: teal;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  #boxm3 {
+    display: block;
+    color: black;
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 800px) {
+  #boxm4 {
+    display: block;
+    background-color: green;
+  }
 }
