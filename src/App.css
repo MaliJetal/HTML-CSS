@@ -348,6 +348,9 @@ h3 {
 
   /* flex-grow: 2;
   flex-shrink: 2; */
+  background-color: var(--primary-color);
+  border: 2px solid var(--danger-color);
+  max-width: var(--maxw);
 }
 #item-2 {
   /* flex-grow: 3;
@@ -427,4 +430,225 @@ html {
     display: block;
     background-color: green;
   }
+}
+
+h1 {
+  background-color: red;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* if p is contained by any li which is contained by div */
+/* div li p{
+  color: yellow;
+  background-color: green;
+  font-weight: bold;
+} */
+
+/* if p is right inside div then this CSS will be applied */
+/* div > p {
+  color: yellow;
+  background-color: green;
+  font-weight: bold;
+} */
+
+/* if p is right after div i.e p is the next sibling of div*/
+div + p {
+  color: white;
+  background-color: rgb(238, 137, 137);
+}
+
+.nthContainer {
+  display: block;
+  width: 300px;
+  margin: auto;
+}
+
+input {
+  display: block;
+}
+
+input[type="email"] {
+  color: yellow;
+  border: 4px solid black;
+}
+
+input[type="text"] {
+  background-color: cyan;
+  border: 2px solid red;
+}
+
+li:nth-child(2n + 0) {
+  background-color: blue;
+}
+
+li:nth-child(odd) {
+  background-color: yellow;
+}
+
+li:nth-child(3n + 3) {
+  background-color: purple;
+}
+
+li:nth-child(3) {
+  background-color: cyan;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+header::before {
+  background: url("https://source.unsplash.com/collection/190727/1600x900")
+    no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.navigation {
+  font-family: "Bree Serif", serif;
+  font-size: 20px;
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding: 20px 23px;
+}
+
+section {
+  height: 344px;
+  font-family: "Bree Serif", serif;
+  margin: 3px 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+  background-color: transparent;
+  color: white;
+}
+
+p {
+  text-align: center;
+}
+
+/* section::after {
+  content: "this is a content";
+} */
+
+.cardcontainer {
+  display: flex;
+}
+.card {
+  padding: 23px 12px;
+  margin: 23px 12px;
+  border: 2px solid red;
+  background-color: burlywood;
+  /* box-shadow: offset-x offset-y color; */
+  /* box-shadow: offset-x offset-y blur-radius color; */
+  /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+  /* box-shadow: 10px 13px green; */
+  /* box-shadow: -10px -13px green; */
+  box-shadow: 7px 5px 10px green;
+  /* box-shadow: -7px -5px 10px green; */
+  /* box-shadow: -7px -5px 10px 10px green; */
+  /* box-shadow: -7px -5px 10px 34px rgba(71, 172, 172, 0.5); */
+  /* box-shadow: inset 3px 5px green; */
+
+  /* box-shadow: 3px 5px green, 4px 6px red; */
+}
+.card h2 {
+  /* text-shadow: 3px 4px red; */
+  text-shadow: 3px 2px 15px rgb(71, 231, 159);
+  /* text-shadow: -3px -2px 2px white; */
+}
+
+.varContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--maxw);
+}
+
+.varBox {
+  --box-color: #61dafb;
+  width: 200px;
+  height: 200px;
+  background-color: var(--box-color);
+  box-shadow: 2px 3px var(--box-color);
+  border: 2px solid var(--danger-color);
+  margin: 2px 9px;
+}
+
+.aniContainer {
+  display: flex;
+  background-color: blueviolet;
+  margin: 10px 5px;
+}
+
+.aniBox {
+  background-color: aquamarine;
+  width: 250px;
+  height: 250px;
+  /* animation-name: ani1; */
+  animation-name: harry2;
+  animation-duration: 2s;
+  /* animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-direction: reverse; */
+
+  /* These properties can be set using this shorthand */
+  /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+  /* animation: harry 5s ease-in 1s 12 backwards; */
+}
+
+@keyframes harry2 {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    top: 250px;
+    left: 0px;
+  }
+  75% {
+    top: 250px;
+    left: 250px;
+  }
+  100% {
+    top: 0px;
+    left: 250px;
+  }
+}
+
+@keyframes ani1 {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 400px;
+  }
+}
+
+:root {
+  --primary-color: blue;
+  --danger-color: red;
+  --maxw: 333px;
 }

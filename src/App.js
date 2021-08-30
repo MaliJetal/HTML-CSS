@@ -6,7 +6,7 @@ function App() {
     <div>
       <header>
         <nav className="navbar">
-          <ul>
+          <ul className="navigation">
             <li>
               <a href="#">Home</a>
             </li>
@@ -30,9 +30,18 @@ function App() {
           </ul>
         </nav>
       </header>
-      <header className="page-header App-header">
+      <section>
+        <h1> Welcome to Coding World</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+          error ratione doloribus sed dolorum, ipsum cumque reprehenderit
+          dignissimos architecto veniam optio sint aliquam consectetur corrupti
+          vero similique velit. Possimus eum consequatur delectus quia magni.
+        </p>
+      </section>
+      {/* <header className="page-header App-header">
         <h1>Header Semantic Tag</h1>
-      </header>
+      </header> */}
       <h2>This is HTML Forms</h2>
       <form action="backend.js">
         <div>
@@ -254,6 +263,102 @@ function App() {
       </div>
       <div class="mediaBox" id="boxm4">
         Android
+      </div>
+      <h1>This is more on selectors</h1>
+      <div class="container">
+        <div class="row">
+          <ul>
+            <li class="item">
+              <p> this is another paragraph inside li</p>
+            </li>
+            <li>this will not get affected</li>
+            <p>this is a para inside ul</p>
+          </ul>
+          <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+      </div>
+      <p>this is outermost paragraph</p>
+      <div className="nthContainer">
+        <form action="#" className="nthForm">
+          Enter your Name
+          <input type="text" name="name" />
+          Enter your Email
+          <input type="email" name="email" />
+          Submit
+          <input type="submit" name="submit" />
+        </form>
+        <ul>
+          <li class="item" id="item-1">
+            Item1
+          </li>
+          <li class="item" id="item-2">
+            Item2
+          </li>
+          <li class="item" id="item-3">
+            Item3
+          </li>
+          <li class="item" id="item-4">
+            Item4
+          </li>
+          <li class="item" id="item-5">
+            Item5
+          </li>
+          <li class="item" id="item-6">
+            Item6
+          </li>
+          <li class="item" id="item-7">
+            Item7
+          </li>
+          <li class="item" id="item-8">
+            Item8
+          </li>
+          <li class="item" id="item-9">
+            Item9
+          </li>
+          <li class="item" id="item-10">
+            Item10
+          </li>
+        </ul>
+      </div>
+      <div className="cardcontainer">
+        <div className="card" id="card-1">
+          <h2>This is C++ Course</h2>
+          <p>
+            I have started C++ course which does not mean that we will stop this
+            course. We will continue this course to completion. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Cumque laudantium,
+            doloremque enim repellat impedit autem nostrum facilis odio omnis
+            optio voluptates beatae mollitia temporibus voluptas consequuntur
+            harum animi totam molestiae labore architecto ratione qui!
+          </p>
+        </div>
+        <div class="card" id="card-2">
+          <h2>This is HTML Course</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            placeat doloribus molestiae velit ipsum, aliquam officia ratione
+            excepturi in officiis, incidunt quo est pariatur tempore ex,
+            distinctio nostrum! Sint non doloribus rem obcaecati sunt.
+          </p>
+        </div>
+        <div class="card" id="card-3">
+          <h2>This is CSS Course</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur
+            molestiae, placeat quas perferendis quibusdam atque omnis distinctio
+            obcaecati dolor, tempora unde deserunt iure nam. Iste labore eveniet
+            esse deserunt?
+          </p>
+        </div>
+      </div>
+      <div className="varContainer">
+        <div className="varBox"></div>
+        <div className="varBox"></div>
+        <div className="varBox"></div>
+      </div>
+      <div className="aniContainer">
+        <div className="aniBox">This is a box.</div>
       </div>
     </div>
   );
