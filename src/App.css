@@ -647,6 +647,221 @@ p {
   }
 }
 
+.tranContainer {
+  height: 200px;
+  width: 200px;
+  display: flex;
+}
+
+#tranBox {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  /* transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2s; */
+
+  /* Transition short hand property in one line */
+  /* transition: background-color 1s ease-in-out 2s; */
+
+  transition: all 1s ease-in-out 0.3s;
+}
+
+#tranBox:hover {
+  background-color: green;
+  height: 400px;
+  width: 400px;
+  border-radius: 100px;
+  font-size: 45px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.transContainer {
+  height: 80vh;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: brown;
+  border: 2px solid black;
+  border-radius: 8px;
+  height: 400px;
+  width: 400px;
+  transition: all 0.5s ease-in-out;
+}
+.transBox:hover {
+  /* transform: rotate(360deg); */
+  /* transform: skew(40deg); */
+  /* transform: scale(2); */
+  /* transform: translateX(123px); */
+  /* transform: translateY(123px); */
+  transform: translate(123px, 123px);
+}
+
+.gridContainer {
+  display: grid;
+  /* grid-template-columns: 300px 100px 100px; */
+  /* grid-template-columns: 300px auto 100px; */
+  grid-template-columns: 1fr 4fr 1fr;
+  /* grid-template-columns: repeat(3, auto); */
+  grid-gap: 2rem;
+}
+.gridItem {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border: 2px solid black;
+  padding: 15px 5px;
+}
+
+.grid {
+  display: grid;
+  /* grid-template-rows: repeat(5, 1fr); */
+  /* grid-auto-rows: 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+  grid-gap: 1rem;
+  justify-content: center;
+}
+
+.gridBox {
+  background-color: red;
+  border: 2px solid black;
+  padding: 23px;
+}
+
+.gridBox:first-child {
+  /* grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3; */
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
+}
+
+#navbar {
+  grid-area: navbar;
+}
+#section {
+  grid-area: section;
+}
+#aside {
+  grid-area: aside;
+}
+
+.classContainer {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "section section section aside"
+    "footer footer footer footer";
+}
+
+.classItem {
+  background-color: yellow;
+  border: 3px solid black;
+  padding: 12px 23px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.mediaGridContainer {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "section section section aside"
+    "footer footer footer footer";
+}
+
+@media only screen and (max-width: 300px) {
+  body {
+    background-color: red;
+  }
+  .mediaGridContainer {
+    grid-template-areas:
+      "navbar navbar navbar navbar"
+      "section section section section"
+      "aside aside aside aside"
+      "footer footer footer footer ";
+  }
+  aside {
+    display: none;
+  }
+  span {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .mediaGridContainer {
+    grid-template-areas:
+      "navbar navbar navbar navbar"
+      "section section section section"
+      "aside aside aside aside"
+      "footer footer footer footer ";
+  }
+  aside {
+    display: none;
+  }
+  span {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .mediaGridContainer {
+    grid-template-areas:
+      "navbar navbar navbar navbar"
+      "section section section section"
+      "aside aside aside aside"
+      "footer footer footer footer ";
+  }
+  span {
+    display: block;
+    text-align: center;
+  }
+}
+
+.bdr {
+  border: 2px solid black;
+  padding: 10px 20px;
+  background-color: wheat;
+}
+
+nav {
+  grid-area: navbar;
+}
+
+section {
+  grid-area: section;
+}
+
+aside {
+  grid-area: aside;
+}
+
+#footer {
+  grid-area: footer;
+  text-align: center;
+}
+
 :root {
   --primary-color: blue;
   --danger-color: red;
