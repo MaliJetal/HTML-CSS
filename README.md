@@ -27,3 +27,10 @@ In this tutorial, we will be learning basic to next level features and propertie
 - Flexbox is a one-dimensional layout method for laying out items in rows or columns.
 - It is better way to align items into a container
   <img src="./src/resources/flex-items.png" />
+  
+ - Static Absolute Relative Fixed Sticky
+ - Ststic - default not affected by top,right,left,bottom properties
+ - Absolute - relative to nearest positioned ansectors
+ - Relative - relative to its normal position 
+ - Fixed - relative to viewpoint
+ - Sticky - based on user's scroll position
