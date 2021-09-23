@@ -24,6 +24,16 @@ In this tutorial, we will be learning basic to next level features and propertie
   4.  CSS grouping Selector
 
 - FlexBox
-- Flexbox is a one-dimensional layout method for laying out items in rows or columns.
-- It is better way to align items into a container
+  - Flexbox is a one-dimensional layout method for laying out items in rows or columns.
+  - It is better way to align items into a container
   <img src="./src/resources/flex-items.png" />
+
+- Responsive Design
+  - Endless new resolutions and devices are difficult to support seperately for a web developer.
+  - Responsive design make website adapt to all devices and resolutions.
+  - Responsive Design is neccessary.
+  1. To achieve responsive design
+    - Setting up viewport.
+    - Use max-width/min-height
+    - Using CSS Media Queries.
+    - Using rem/vh/vw units over pixels.
